@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios'
 import PlayerCard from './components/PlayerCard'
 import './App.css';
+import NavBar from './components/NavBar'
 
 class App extends React.Component{
   constructor(){
@@ -24,7 +25,7 @@ class App extends React.Component{
   render() {
     return (
       <div className="App">
-        <h1>World Cup Players</h1>
+        <NavBar />
         <section>
         {this.state.players.map(player =>
           <PlayerCard key={player.id}
