@@ -7,4 +7,7 @@ ComponentDidUpdate - runs code, primarily side effects and when stated is update
 ComponentWillUnmount - runs code prior to death of component, usually used for garbage collection
 
 - [ ] What is the purpose of a custom hook?
+The purpose of a custom hook is to reuse state logic in other components rather than to rewrite the same logic over and over again
+
 - [ ] Why is it important to test our apps?
+Testing allows the developer to produce a better product by identifying errors in the code that may result in performance issues, inoperability, memory issues, etc. Testing allows the developer to make sure that a pure component produces the correct output given the same input.
