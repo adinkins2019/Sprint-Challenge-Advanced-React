@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import * as rtl from 'react-testing-library'
+import 'jest-dom/extend-expect'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+ const wrapper = rtl.render(<App />)
+ console.log(wrapper.debug())
 });
