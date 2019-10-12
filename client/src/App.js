@@ -24,12 +24,15 @@ class App extends React.Component{
   render() {
     return (
       <div className="App">
-        <h1>Players</h1>
-        <section>{this.state.players.map(player =>
-          <PlayerCard key={player.id} name = {player.name} country={player.country} searches={player.searches} />
-            
-          
-        )}</section>
+        <h1>World Cup Players</h1>
+        <section>
+        {this.state.players.map(player =>
+          <PlayerCard key={player.id}
+                  name = {player.name}
+                  country={player.country}
+                  searches={player.searches} />
+          )}
+        </section>
       </div>
     );
   }
